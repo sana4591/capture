@@ -49,7 +49,6 @@
       // Get image handle
       //
       var largeImage = document.getElementById('largeImage');
-var imguri = document.getElementById('imageuri');
 
       // Unhide image elements
       //
@@ -59,7 +58,6 @@ var imguri = document.getElementById('imageuri');
       // The inline CSS rules are used to resize the image
       //
       largeImage.src = imageURI;
-      imguri.innerHTML =imageURI ;
     }
 
     // A button will call this function
@@ -100,6 +98,5 @@ var imguri = document.getElementById('imageuri');
     <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
     <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
     <img style="display:none;" id="largeImage" src="" />
-    <p id="imageuri">image uri: </p>
   </body>
 </html>
